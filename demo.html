@@ -242,21 +242,21 @@
 				<section>
 					<h2>Pretty Code</h2>
 					<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
-				</section>	
-import React, { useState } from 'react';
 
-function Example() {
-  const [count, setCount] = useState(0);
+							import React, { useState } from 'react';
 
-  return (
-    &lt;div&gt;
-      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-        Click me
-      &lt;/button&gt;
-    &lt;/div&gt;
-  );
-}
+							function Example() {
+							  const [count, setCount] = useState(0);
+
+							  return (
+							    &lt;div&gt;
+							      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+							      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+							        Click me
+							      &lt;/button&gt;
+							    &lt;/div&gt;
+							  );
+							}
 					</code></pre>
 					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
@@ -359,11 +359,13 @@ function Example() {
 					<p>
 						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
 					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
+					<pre>
+						<code class="javascript" data-trim contenteditable style="font-size: 18px;">
+							Reveal.addEventListener( 'customevent', function() {
+								console.log( '"customevent" has fired' );
+							} );
+						</code>
+					</pre>
 				</section>
 
 				<section>
